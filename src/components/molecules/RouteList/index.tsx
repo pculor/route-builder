@@ -76,7 +76,7 @@ const RouteList = (): JSX.Element => {
                 <Icon iconName='bars' className='icon' />
               </div>
               <span className='title'>
-                Waypoint {index + 1} ({point.id})
+                Waypoint {index + 1}
               </span>
               <Button type="button" className='trash' onClick={() => removeWayPoint(point.id)}>
                 <Icon iconName="trash" className='icon' />
