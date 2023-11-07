@@ -62,6 +62,22 @@ const Map = () => {
     };
   }, [waypoints]);
 
+
+  useEffect(() => {
+    const mapState = mapRef.current;
+    let polyline: L.Polyline;
+
+    if (mapState) {
+      polyline = L.polyline(
+        waypoints.map((point: WayPoint) => point.coord)
+      ).addTo(mapState);
+    }
+
+    return () => {
+      mapState && mapState.removeLayer(polyline);
+    };
+  }, [waypoints]);
+
   return <ContentContainer id="map" title="Route Builder" />;
 };
 
