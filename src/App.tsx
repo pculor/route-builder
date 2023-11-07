@@ -1,11 +1,11 @@
 import React from 'react';
-import Map from './components/molecules/Map';
+import Layout from './components/views';
 import { Provider } from './Context/Provider';
 
 function App() {
   return (
     <Provider>
-      <Map />
+      <Layout />
     </Provider>
   );
 }

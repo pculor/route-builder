@@ -1,7 +1,8 @@
 export const theme ={
     colors:{
         mainColor : '#393D4A',
-        mainColorHover : '#58A6DE',
+        mainColorHover : '#C3E452',
+        mainColorFocus: '#8ba731',
         blue: '#0076ff',
         black : '#24292e',
         grey: '#F4F4F4',
